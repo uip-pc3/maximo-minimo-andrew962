@@ -25,21 +25,21 @@ def min_val(a,b):
 
 def print_usage(init_msg, max_val=True, min_val=True):
     global maxCalled, minCalled
-    print init_msg
+    print (init_msg)
     if max_val:
-        print('functin max_val was called', maxCalled, ' times')
+        print('La funcion max_val fue llamada', maxCalled, ' times')
     if min_val:
-        print('function min_val was called', minCalled, ' times')
+        print('La funcion min_val fue llamada', minCalled, ' times')
 
 if __name__ == '__main__':
-    print('Calling function max_val')
+    print('Llamando a la funcion max_val')
     max_val(1,4)
     max_val(2,b=1)
     max_val(b=4,a=3)
 
-    print('Calling function min_val')
+    print('Llamando a la funcion min_val')
     min_val(1,4)
     min_val(2,4)
     min_val(4,b=9)
 
-    print_usage('The usage of functions min_val and max_val')
+    print_usage('El uso de las funciones min_val y max_val')
