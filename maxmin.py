@@ -2,6 +2,8 @@ maxCalled = 0
 minCalled = 0
 
 def max_val(a,b):
+    """:param max_val: Funcion que mira cual es el maximo
+       :var a,b: se evaluan entre ella para ver cual es mayor"""
     global maxCalled
     maxCalled = maxCalled + 1
   
@@ -13,6 +15,8 @@ def max_val(a,b):
         return a
 
 def min_val(a,b):
+    """:param min_val: funcion en donde se evaluan los minimos
+       :var a,b: se estan evaluando entre si para ver cual es menor"""
     global minCalled 
     minCalled = minCalled + 1
   
@@ -41,5 +45,5 @@ if __name__ == '__main__':
     min_val(1,4)
     min_val(2,4)
     min_val(4,b=9)
-
+    """:param print_usage: funcion llamada para imprimir su contenido"""
     print_usage('El uso de las funciones min_val y max_val')
